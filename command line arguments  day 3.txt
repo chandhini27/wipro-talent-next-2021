@@ -1,0 +1,36 @@
+programs in language basics:
+
+1. program that accepts two strings:
+
+class Demo1
+{
+ public static void main(String args[])
+{
+System.out.println(args[0] + “ technologies ”);
+System.out.println(args[1]);
+ }
+}
+
+
+2. welcome message:
+
+class Demo2
+{
+	public static void main(String args[])
+	{
+		System.out.println("Welcome"+args[0]);
+	}
+}
+
+3. program to add two numbers
+class Demo3
+{
+      public static void main(String args[])
+      {
+            int x,y,s;
+            x=Integer.parseInt(ar[0]);
+            y=Integer.parseInt(ar[1]);
+            s=x+y;
+            System.out.println("The sum of " + x + " and " + y +" is " +s);
+      }
+}
