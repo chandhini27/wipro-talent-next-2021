@@ -1,0 +1,52 @@
+java classes and objects programs:-
+
+1. volume
+class Box
+{
+	double volume(double a,double b,double c)
+	{
+		double v;
+		v=a*b*c;
+		return v;
+	}
+}
+public class Demo{
+	public static void main(String args[])
+	{
+		double h,w,d;
+		Scanner s=new Scanner(System.in);
+		Box a=new Box();
+		h=s.nextDouble();
+		w=s.nextDouble();
+		d=s.nextDouble();
+		double p.volume(h,w,d);
+		System.out.println(p);
+	}
+}
+
+
+3. bmi 
+
+class Patient
+{
+	String name;
+	double height,weight;
+	Patient(double w, double h)
+	{
+		weight=w;
+		height=h;
+	}
+	double BMI()
+	{
+		return((weight/(height*height))*703);
+	}
+}
+class Patients
+{
+	public static void main(String args[])
+	{
+		Patient p=new Patient(45,160);
+		System.out.println(p.BMI);
+	}
+}
+
