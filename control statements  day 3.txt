@@ -1,0 +1,202 @@
+flow control statements :
+
+1.positive ,negative and zero
+
+class Number
+{
+	public static void main(String args[])
+	{
+		Scanner s =new Scanner(System.in);
+		int num=s.nextInt();
+		if (num>0)
+		{
+			System.out.println("the given number"+num+"is positive number");
+		}
+		else if(num<0)
+		{
+			System.out.println("the given number"+num+"is negative number");
+		}
+		else
+		{
+			System.out.println("the given number is zero");
+		}
+	}
+}
+
+2.odd and even
+
+class Numerals
+{
+	public static void main(String args[])
+	{
+		Scanner s=new Scanner(System.in);
+		int number=s.nextInt()
+		if (number%2==0)
+		{
+			System.out.println("the given no"+number+"is even number");
+		}
+		else
+		{
+			System.out.println("the given no"+number+"is odd number");
+		}
+	}
+}
+
+
+3. check whether the program received command line arguments
+
+class Command
+{
+    public static void main (String[] args)
+    {
+    	if (args.length ==0)
+            	{
+            		System.out.println("No Values");
+   	 }
+        	else
+	{
+            		for(String i : args) 
+                	System.out.print(i+" , ");
+       	 }
+        }
+}
+
+
+5. alphabet or number or special character:(by ASCII values)
+
+class Values
+ { 
+	static void charCheck(char input_char) 
+	{ 
+		if ((input_char >= 65 && input_char <= 90) || (input_char >= 97 && input_char <= 122)) 
+		{
+			System.out.println(" Alphabet "); 
+		}
+		else if (input_char >= 48 && input_char <= 57) 
+		{
+			System.out.println(" Digit "); 
+		}
+		else
+		{
+			System.out.println(" Special Character "); 
+		}
+	} 
+
+	public static void main(String[] args) 
+	{ 
+		System.out.println("Enter the values:");
+		charCheck(input_char); 
+	} 
+}  
+
+7. upper to lower case:
+ class Case 
+{    
+    	public static void main(String args[])
+	 {    
+            		String str1;  
+		System.out.println("Enter the string:");  
+        		StringBuffer newStr=new StringBuffer(str1);  
+        		for(int i = 0; i < str1.length(); i++) 
+		{    
+            			if(Character.isLowerCase(str1.charAt(i)))
+			 {        
+                			newStr.setCharAt(i, Character.toUpperCase(str1.charAt(i)));    
+           			 }      
+           			 else if(Character.isUpperCase(str1.charAt(i))) 
+			{       
+                			newStr.setCharAt(i, Character.toLowerCase(str1.charAt(i)));    
+           			 }    
+      		  }    
+       		 System.out.println("String after case conversion : " + newStr);    
+    	}    
+}     
+
+8. switch case color code
+
+class Example
+{
+	public static void main(String args[])
+	{
+		System.out.println("enter the code:");
+		Scanner s=new Scanner(System.in);
+		char color=s.nextChar();
+		switch(color)
+		{
+			case R :  System.out.println("Red");
+			break;
+			
+			case G:  System.out.println("Green");
+			break;
+
+			case B:  System.out.println("Blue");
+			break;
+
+			case O :  System.out.println("Orange");
+			break;
+
+			case Y :  System.out.println("Yellow");
+			break;
+
+			case W :  System.out.println("White");
+			break;
+
+			default :  System.out.println("Invalid code");
+			break;
+		}
+}
+
+9.  find month using switch
+
+class Month
+{
+	public static void main(String args[])
+	{
+		System.out.println("enter the month:");
+		Scanner s=new Scanner(System.in);
+		int m=s.nextInt();
+		switch(m)
+		{
+			case 1 :  System.out.println("January");
+			break;
+			
+			case 2:  System.out.println("Feburary");
+			break;
+
+			case 3:  System.out.println("March");
+			break;
+
+			case 4 :  System.out.println("April");
+			break;
+
+			case 5 :  System.out.println("May");
+			break;
+
+			case 6 :  System.out.println("June");
+			break;
+
+			case 7 :  System.out.println("July");
+			break;
+			
+			case 8:  System.out.println("August");
+			break;
+
+			case 9:  System.out.println("September");
+			break;
+
+			case 10 :  System.out.println("October");
+			break;
+
+			case 11 :  System.out.println("November");
+			break;
+
+			case 12 :  System.out.println("December");
+			break;
+
+			default :  System.out.println("Invalid month");
+			break;
+		}
+}
+
+
+	
