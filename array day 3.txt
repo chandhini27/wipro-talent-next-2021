@@ -1,0 +1,101 @@
+day 3 arrays :
+
+
+1. program to initialize an integer array and print the sum and average of the array.  
+ class Array
+ {
+	 public static void main(String args[])
+	 {
+       		 System.out.println("enter numbers");
+       		 Scanner c = new Scanner(System.in);
+       		 int a = c.nextInt();
+        		double[] arr = new double[a];
+        		double total = 0;
+  		for(int i=0; i<arr.length; i++)
+		{
+        			System.out.print("Enter Element No."+(i+1)+": ");
+        			arr[i] = c.nextDouble();
+        		}
+        		for(int i=0; i<arr.length; i++)
+		{
+        			total = total + arr[i];
+       		 }
+		 double average = total / arr.length;
+   		System.out.format("The average is: %.3f", average);
+   	 }
+}
+
+2.program to initialize an integer array and find the maximum and minimum value of an array
+class Array
+ {  
+ 	 public static void main(String args[])
+	{
+    		int array[] = new int[]{2001,3425,23,0,162};
+    		int max = getMax(array);
+   		 System.out.println("Maximum Value is: "+max);
+   		 int min = getMin(array);
+    		System.out.println("Minimum Value is: "+min);
+  	}
+ 	 public static int getMax(int[] inputArray)
+	{ 
+    	int maxValue = inputArray[0]; 
+    	for(int i=1;i < inputArray.length;i++)
+	{ 
+      	if(inputArray[i] > maxValue)
+	{ 
+         	maxValue = inputArray[i]; 
+      	} 
+   	 } 
+    return maxValue; 
+  }
+  public static int getMin(int[] inputArray)
+{ 
+   	 int minValue = inputArray[0]; 
+   	 for(int i=1;i<inputArray.length;i++)
+	{ 
+     	 if(inputArray[i] < minValue)
+	{ 
+        	minValue = inputArray[i]; 
+     	 } 
+    } 
+    return minValue; 
+  } 
+}
+
+3.Write a program to initialize an integer array with values and check if a given number is present in the array or not. 
+class Array
+{
+public static void main(String args[]) 
+{
+        int[] num = {1, 2, 3, 4, 5};
+        int toFind = 3;
+        boolean found = false
+ for (int n : num) 
+{
+            if (n == toFind) 
+{
+                found = true;
+                break;
+            }
+        }
+   if(found)
+            System.out.println(n[ num] );
+        else
+            System.out.println("-1");
+    }
+}
+}
+
+4.Initialize an integer array with ascii values and print the corresponding character values in a single row public 
+class Demo
+{
+   public static void main(String args[]) 
+   {
+ char c; 
+  for(int i=65;i<=90;i++) 
+      {
+         c =(char)i; 
+         System.out.println(i+"  =  "+c);
+      }
+   }
+}
