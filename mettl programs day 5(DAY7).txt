@@ -1,0 +1,93 @@
+day 5 mettl programs:-
+(Day6)
+
+1. is n exact multiple number
+import java.io.*;
+import  java.util.*;
+class UserMainCode
+{
+  public int isMultiple(int input1,int input2)
+  {
+  	if(input1%input2==0)
+		return 2;
+	else if(input1%input2!=0)
+		return 1;
+	else 
+		return 3;
+ }
+}
+
+2. 5 nos given count how many even numbers are there
+import java.io.*;
+import  java.util.*;
+class UserMainCode
+{
+  public int countEvens(int input1,int input2,int input3,int input4,int input5)
+  {
+  	int array[]={input1,input2,input3,input4,input5};
+	int even=0;
+	for(int i=0;i<5;i++)
+	{
+		if(array[i]%2==0)
+		{
+			even=even+1;
+		}
+	}
+	return even;
+  }
+}
+3. 5 nos given count how many odd numbers are there:-
+import java.io.*;
+import  java.util.*;
+class UserMainCode
+{
+  public int countOdds(int input1,int input2,int input3,int input4,int input5)
+  {
+  	int array[]={input1,input2,input3,input4,input5};
+	int odd=0;
+	for(int i=0;i<5;i++)
+	{
+		if(array[i]%2!=0)
+		{
+			odd=odd+1;
+		}
+	}
+	return odd;
+  }
+}
+4. 5 nos given check how many odd and even numbers are there and 6 th ip is string type:-
+import java.io.*;
+import  java.util.*;
+class UserMainCode
+{
+	public int countEvensOdds(int input1,int input2,int input3,int input4,int input5,String input6)
+	{
+		int array[]={input1,input2,input3,input4,input5};
+		int even=0,odd=0;
+		String str=new String("even");
+		if(str==input6)
+		{
+			for(int i=0;i<5;i++)
+			{
+				if(arr[i]%2==0)
+				{
+					even=even+1;
+				}
+			}
+			return even;
+		}
+	
+		else
+		{
+			for(int i=0;i<5;i++)
+			{
+				if(arr[i]%2!=0)
+				{
+					odd=odd+1;
+				}
+		
+			}
+			return odd;
+		}
+	}
+}
